@@ -25,11 +25,14 @@ createApp({
 			this.taskDescription = ""
 		},
 		removeTaskBtn(i) {
-			console.log(i,this.tasks[i])
 			this.tasks.splice(i, 1)
 		},
         doneTaskBtn(){
-            this.taskDone = true 
+            this.taskDone = true
+            if(this.taskDone === true){
+                console.log("Done!")
+            }
+            
         }
 
 	},
