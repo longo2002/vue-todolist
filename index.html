@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://kit.fontawesome.com/ada0ed41be.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/app.css">
-    <title>TodoList</title>
+    <title>To-do List</title>
 </head>
 
 <body>
@@ -14,21 +16,28 @@
         To-do List
     </header>
 
-    <main>
+    <main id="app">
 
-        <div class="container card">
+        <section class="container card">
 
             <div class="card-header">
-
+                <input type="text" class="form-control" id="txt" placeholder="Inserisci nuova task" v-model="taskDescription" />
+                <button @click="addTaskBtn" id="btn">Aggiungi Task</button>
             </div>
 
             <div class="card-body">
-
-
+                    <ul>
+                        <li v-for="(task,index) in tasks" v-if="" class="list-item">
+                            <span @click="removeTaskBtn(index)"><i class="fa-solid fa-xmark"></i></span>
+                            {{ task }}
+                            <input type="checkbox" @click="doneTaskBtn">
+                        </li>
+                    </ul>
+                </div>
+            </div>
             </div>
 
-        </div>
-
+        </section>
 
     </main>
     <script src="./js/app.js"></script>
