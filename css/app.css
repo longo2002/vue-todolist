@@ -70,8 +70,20 @@ main {
 
 #btn,
 #txt{
-    background-color: white;
-    border: 1px solid lightgray;
+    border: none;
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
+}
+
+#btn{
+    background-color: rgb(220, 24, 220);
+    color: white;
+}
+
+#txt{
+    background-color: rgb(245, 245, 241);
+}
+
+.doneTask{
+    text-decoration: line-through;
 }

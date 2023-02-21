@@ -28,8 +28,8 @@
             <div class="card-body">
                     <ul>
                         <li v-for="(task,index) in tasks"  class="list-item">
-                            <span>
-                                <input type="radio">
+                            <span v-if="">
+                                <input type="radio" @click.once="doneTaskBtn">
                                 {{ task }}
                             </span>
                             <span @click="removeTaskBtn(index)"><i class="fa-solid fa-xmark"></i></span>

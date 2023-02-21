@@ -16,7 +16,7 @@ createApp({
 	methods: {
 		addTaskBtn() {
 			const newTask = this.taskDescription
-			if(this.taskDescription === "" ){
+			if(newTask === "" ){
                 alert("Inserisci una task!")
             } else {
                 this.tasks.push(newTask)
@@ -29,10 +29,6 @@ createApp({
 		},
         doneTaskBtn(){
             this.taskDone = true
-            if(this.taskDone === true){
-                console.log("Done!")
-            }
-            
         }
 
 	},
