@@ -1,0 +1,104 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+ol,
+ul,
+menu {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #eeeeee;
+}
+
+.main-header {
+    background-color: white;
+    font-family: 'Alexandria', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    padding: 10px 40px;
+}
+
+main {
+    padding: 50px 0;
+}
+
+.container {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.card {
+    background-color: white;
+    border-radius: 7px;
+    font-family: 'Alexandria', sans-serif;
+}
+
+.card-header {
+    border-bottom: 3px solid #eeeeee;
+    padding-top: 25px;
+    padding-bottom: 15px;
+}
+
+.card-body {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.card-header,
+.card-body {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.task-category {
+    font-family: 'Alexandria', sans-serif;
+}
+
+.list-item {
+    margin-bottom: 20px;
+}
+
+.icon {
+    border: 1px solid currentColor;
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    text-align: center;
+    line-height: 22px;
+}
+
+.icon-check {
+    color: lime;
+}
+
+.icon-cross {
+    color: rgb(252, 65, 65);
+}
+
+.tag {
+    font-size: 12px;
+    color: white;
+    padding: 0 8px;
+    border-radius: 8px;
+    line-height: 32px;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.bg-blue {
+    background-color: dodgerblue;
+}
+
+.bg-green {
+    background-color: rgb(29, 219, 29);
+}
